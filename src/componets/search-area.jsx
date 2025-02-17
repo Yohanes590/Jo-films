@@ -12,6 +12,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaPlayCircle } from "react-icons/fa";
 import photoBanner from '../assets/banner5.jpg'
+import '../scripts/route-script'
 function SearchArea(){
 
 
@@ -43,29 +44,6 @@ function SearchArea(){
           autoplaySpeed: 1500,
       };
 
-    const [ open , setOpen ] = useState(true)
-    const ChangeState = ()=>{
-        if(open == true){
-            setOpen(false)
-            document.querySelector(".profile-information").style.height="140px"
-        }else{
-            setOpen(true)
-            document.querySelector(".profile-information").style.height="0px"
-        }
-    }
-
-    const [respo , setRespo] = useState(true)
-
-const OpenResponcive = ()=>{
-    if(respo == true){
-        setRespo(false)
-        document.querySelector(".side-menu-hidden").style.width="100%"
-    }else{
-        setRespo(true)
-        document.querySelector(".side-menu-hidden").style.width="0%"
-    }
-}
-
     return(<>
 
            <div className="search-around">
@@ -73,81 +51,16 @@ const OpenResponcive = ()=>{
             {/*  Hidden Menu Part */}
 
 
-           <div className="side-menu-hidden">
-                
-                <div className="center-items">
-
-                    <h2> - Profile Setting</h2>
-
-                    <div className="each-center-item"><span>example@gmail.com</span></div>
-                    <div className="each-center-item"><span>Favorites <MdFavorite/></span></div>
-                    <div className="each-center-item"><span>LiveShow <CiVideoOn/></span></div>
-                    <div className="each-center-item"><span>UpComing <GrUpdate/></span></div>
-                    <div className="each-center-item"><span>Logout <CiLogout/></span></div>
-                    <div className="each-center-item"><span>Delete Account <MdDeleteOutline/> </span></div>
-                </div>
-            </div>
-
-            {/*  Hidden Menu Part */}
-
-                <div className="search-nav-bar">
-
-                    <div className="search-side">
-
-                        <div className="search-box">
-                         <div className="search-icon"><CiSearch/></div>   <input type="text" placeholder='Search ...'/><button>Search</button>
-                        </div>
-
-                    </div>
-
-
-                    <div className="clint-buttons">
-                        <div className="recomend"><a href="http://">Home</a></div>
-                        <div className="recomend"><a href="http://">Movie</a></div>
-                        <div className="recomend"><a href="http://">TvShow</a></div>
-                        <div className="recomend"><a href="http://">Favorites</a></div>
-                        <div className="recomend"><a href="http://">LiveShow</a></div>
-                        <div className="recomend"><a href="http://">Upcoming</a></div>
-                    </div>
-
-                    <div className="profile-button">
-                        <div className="profile-class" onClick={ChangeState}><CgProfile size="25"/></div>
-                    </div>
-
-                    <div className="hidden-profile-button">
-                        <div className="profile-class" onClick={OpenResponcive}><CgProfile size="25"/></div>
-                    </div>
-                </div>
-
-
-
-{/*Responce Section */}
-
-
-            <div className="profile-information">
-
-                <div className="button-section">
-                <div className="back-button">
-                <span>example@gmail.com</span>
-            </div>
-            <div className="back-button">
-                <span>Logout <CiLogout size="20"/></span>
-            </div>
-            <div className="back-button">
-                <span>Delete Account <MdDeleteOutline size="20"/> </span>
-            </div>
-                </div>
-
-
-            </div>
-
+         
 
 
 
             <div className="tv-show-header">
 
-                   <div className="left-border"><h3>Tv Show Entertainment </h3></div> 
-                   <div className="left-border"><p> Recommendations </p></div> 
+                   <div className="left-border"><h3 id='user-display'> </h3></div> 
+                   <div className="left-border"><p> Exporle Videos For Free </p></div> 
+
+                   
             </div>
 
 
