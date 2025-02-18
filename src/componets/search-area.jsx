@@ -14,6 +14,17 @@ import { FaPlayCircle } from "react-icons/fa";
 import photoBanner from '../assets/banner5.jpg'
 import '../scripts/route-script'
 function SearchArea(){
+setTimeout(() => {
+  const display = document.getElementById("user-display")
+  const RouteLink = window.location.pathname
+  if(RouteLink == "/user-option/tv-show"){
+      display.innerText = "Exprole Tv Shows"
+  }else if(RouteLink == '/user-option/movie'){
+      display.innerText = "Movies"
+  }else if(RouteLink == '/user-option/upcoming'){
+      display.innerText = "Exprole Upcomming Videos "
+  }
+}, 100);
 
 
     const settings = {

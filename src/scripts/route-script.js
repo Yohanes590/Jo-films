@@ -1,5 +1,8 @@
-const display = document.getElementById("user-display")
+
+
+
 export const RouteToTv = (userOption)=>{
+    const display = document.getElementById("user-display")
     if(userOption=="movie"){
         display.innerText = "Movies"
     }else if(userOption == "tv-show"){
@@ -9,6 +12,11 @@ export const RouteToTv = (userOption)=>{
     }else if(userOption == "live-show"){
         display.innerText = "Live Exprole"
     }else if(userOption == "upcoming"){
-        display.innerText = "Exprole Upcomming Videos "
+        display.innerText = "Exprole Upcomming Videos"
     }
+}
+
+export function gettingRoute (Route){
+    console.log(Route)
+   window.location=`/user-option/${Route}`
 }

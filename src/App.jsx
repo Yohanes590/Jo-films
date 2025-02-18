@@ -14,12 +14,14 @@ import SignUp from "./componets/sign-up"
 import SignIn from "./componets/sign-in"
 import DetailPage from "./componets/detail-page"
 import AccountNav from "./componets/account-nav"
+import LoadingNormal from "./componets/normal-loading-anime"
 function HomeInterFace (){
   return(<>
 
   <Routes>
 
 <Route path="/" element={<>
+<LoadingNormal/>
   <Navigation/>
     <HomePage/>
     <CardSection/>
@@ -45,12 +47,29 @@ function HomeInterFace (){
     <BottomBar/>
     </>}/>
 
-    <Route path="/user-option" element={
+    <Route path="/user-option/tv-show" element={
       <>
       <AccountNav/>
       <SearchArea/>
     <BottomBar/>
-    
+    </>
+    } />
+
+
+<Route path="/user-option/movie" element={
+      <>
+      <AccountNav/>
+      <SearchArea/>
+    <BottomBar/>
+    </>
+    } />
+
+
+<Route path="/user-option/upcoming" element={
+      <>
+      <AccountNav/>
+      <SearchArea/>
+    <BottomBar/>
     </>
     } />
 
