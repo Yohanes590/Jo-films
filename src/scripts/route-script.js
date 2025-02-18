@@ -3,6 +3,7 @@
 
 export const RouteToTv = (userOption)=>{
     const display = document.getElementById("user-display")
+    document.querySelector(".side-menu-hidden").style.width="0%"
     if(userOption=="movie"){
         display.innerText = "Movies"
     }else if(userOption == "tv-show"){

@@ -33,23 +33,27 @@ function HomeInterFace (){
     <Fotter/></>}/>
 
     <Route path="/sign-up" element={<>
-        <SignUp/>
+<LoadingNormal/>
+<SignUp/>
     </>}/>
 
     <Route path="/sign-in" element={<>
-        <SignIn/>
+<LoadingNormal/>
+<SignIn/>
     </>}/>
 
 
     <Route path="/detail" element={<>
-      <AccountNav/>
+<LoadingNormal/>
+<AccountNav/>
       <DetailPage/>
     <BottomBar/>
     </>}/>
 
     <Route path="/user-option/tv-show" element={
       <>
-      <AccountNav/>
+<LoadingNormal/>
+<AccountNav/>
       <SearchArea/>
     <BottomBar/>
     </>
@@ -58,7 +62,8 @@ function HomeInterFace (){
 
 <Route path="/user-option/movie" element={
       <>
-      <AccountNav/>
+<LoadingNormal/>
+<AccountNav/>
       <SearchArea/>
     <BottomBar/>
     </>
@@ -67,7 +72,8 @@ function HomeInterFace (){
 
 <Route path="/user-option/upcoming" element={
       <>
-      <AccountNav/>
+<LoadingNormal/>
+<AccountNav/>
       <SearchArea/>
     <BottomBar/>
     </>

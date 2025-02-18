@@ -40,9 +40,9 @@ const OpenResponcive = ()=>{
                         <h2> - Profile Setting</h2>
     
                         <div className="each-center-item"><span>example@gmail.com</span></div>
-                        <div className="each-center-item"><span>Favorites <MdFavorite/></span></div>
-                        <div className="each-center-item"><span>LiveShow <CiVideoOn/></span></div>
-                        <div className="each-center-item"><span>UpComing <GrUpdate/></span></div>
+                        <div onClick={()=>RouteToTv("fav")} className="each-center-item"><span>Favorites <MdFavorite/></span></div>
+                        <div onClick={()=>RouteToTv("live-show")} className="each-center-item"><span>LiveShow <CiVideoOn/></span></div>
+                        <div onClick={()=>RouteToTv("upcoming")} className="each-center-item"><span>UpComing <GrUpdate/></span></div>
                         <div className="each-center-item"><span>Logout <CiLogout/></span></div>
                         <div className="each-center-item"><span>Delete Account <MdDeleteOutline/> </span></div>
                     </div>

@@ -56,7 +56,7 @@ function TopRated (){
                 <div className="each-rate-card">
 
                     <div className="play-button">
-                <div className="detail-page">
+                <div className="detail-pages">
                     <center>
                     <FaCirclePlay size="40"/>
                     <h2>Movie Tile</h2>
@@ -84,7 +84,7 @@ function TopRated (){
                 <div className="each-rate-card">
 
                     <div className="play-button">
-                <div className="detail-page">
+                <div className="detail-pages">
                     <center>
                     <FaCirclePlay size="40"/>
                     <h2>Movie Tile</h2>
@@ -113,7 +113,7 @@ function TopRated (){
                 <div className="each-rate-card">
 
                     <div className="play-button">
-                <div className="detail-page">
+                <div className="detail-pages">
                     <center>
                     <FaCirclePlay size="40"/>
                     <h2>Movie Tile</h2>
@@ -142,7 +142,7 @@ function TopRated (){
                 <div className="each-rate-card">
 
                     <div className="play-button">
-                <div className="detail-page">
+                <div className="detail-pages">
                     <center>
                     <FaCirclePlay size="40"/>
                     <h2>Movie Tile</h2>
